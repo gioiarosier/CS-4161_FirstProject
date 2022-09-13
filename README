@@ -1,0 +1,7 @@
+Downloading the project:
+
+CLone the repository and open the project in Android Studio. I recommend downloading an emulator like Pixel 4 API 30 (R) in order to visualize the build. 
+This will reuire around 1.6GB of storage, so make sure that you have enough disk space to download, or use an actual Android device and connect the Device Manager
+to it using wifi or USB-C.
+Dependencies needed are Lottie, which has already been added to the build.gradle file.
+Build the project and then run it; the application will open on it's own and take you directly to the project.
