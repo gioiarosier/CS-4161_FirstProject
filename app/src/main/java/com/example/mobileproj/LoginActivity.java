@@ -4,18 +4,25 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
+import android.util.StatsLog;
 import android.widget.TextView;
 
 import com.airbnb.lottie.Lottie;
 import com.airbnb.lottie.LottieAnimationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.tabs.TabLayout;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class LoginActivity extends AppCompatActivity {
     LottieAnimationView fruit;
     FloatingActionButton google, fb, twt;
     ViewPager view;
-    TextView header;
+    TextView header, textview2;
+    private Object FirebaseAnalytics;
+    private Object Starter;
+    private StatsLog Analytics;
+    private FirebaseAuth mAuth;
     //TabLayout tab;
 
     @Override
@@ -38,7 +45,13 @@ public class LoginActivity extends AppCompatActivity {
         //view.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tab));
 
 
-
-
     }
+
+//    public void onStart() {
+//        super.onStart();
+//        // Check if user is signed in (non-null) and update UI accordingly.
+//        FirebaseUser currentUser = mAuth.getCurrentUser();
+//        textview2 = findViewById(R.id.textView2);
+//        textview2.append(currentUser.getDisplayName());
+//    }
 }
